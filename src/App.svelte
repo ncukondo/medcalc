@@ -1,12 +1,24 @@
 <script>
 	import Sensep from "./Sensep.svelte";
 	import Plrnlr from "./Plrnlr.svelte";
+	import Abg from "./Abg.svelte";
+	import Router, {link, location} from 'svelte-spa-router';
+	import Home from './Home.svelte';
+
+	const routes = {
+		'/': Home,
+    	'/abg/': Abg,
+    	'/sensep/': Sensep,
+    	'/plrnlr/': Plrnlr,
+	}
 </script>
 
 <main>
-    <Sensep />
-	<hr />
-	<Plrnlr />
+	<Router {routes} />
+	{#if $location!=='/'}
+	  <hr />
+	  <div><a href="/" use:link>Homeへ</a></div>
+	{/if}
 </main>
 
 <style>

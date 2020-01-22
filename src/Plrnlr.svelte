@@ -1,11 +1,10 @@
 <script>
 	import {oddsToPersent,percentToOdds,round} from "./utils.js";
-	export let preProbability = '';
-	export let postProbabilityP = '';
-	export let postProbabilityN = '';
-
-	export let positiveLR='';
-	export let negativeLR='';
+	let preProbability = '';
+	let postProbabilityP = '';
+	let postProbabilityN = '';
+	let positiveLR='';
+	let negativeLR='';
 
 	$: if(positiveLR && negativeLR && preProbability){
 			const preOdds = percentToOdds(preProbability);

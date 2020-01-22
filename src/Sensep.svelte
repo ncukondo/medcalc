@@ -1,13 +1,12 @@
 <script>
 	import {oddsToPersent,percentToOdds,round} from "./utils.js";
-	export let sensitivity='';
-	export let specificity='';
-	export let preProbability = '';
-	export let postProbabilityP = '';
-	export let postProbabilityN = '';
-
-	export let positiveLR='';
-	export let negativeLR='';
+	let sensitivity='';
+	let specificity='';
+	let preProbability = '';
+	let postProbabilityP = '';
+	let postProbabilityN = '';
+	let positiveLR='';
+	let negativeLR='';
 
 	$: if(sensitivity && specificity){
 		const _positiveLR = sensitivity / (100-specificity);
