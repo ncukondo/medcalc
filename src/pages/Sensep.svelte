@@ -1,5 +1,5 @@
 <script>
-	import {oddsToPersent,percentToOdds,round} from "./utils.js";
+	import {oddsToPersent,percentToOdds,round} from "../utils.js";
 	let sensitivity='';
 	let specificity='';
 	let preProbability = '';

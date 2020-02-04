@@ -1,5 +1,5 @@
 <script>
-	let Ph = '';
+  let Ph = '';
 	let Co2 = '';
 	let Hco3 = '';
 	let Na = '';

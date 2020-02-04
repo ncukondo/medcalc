@@ -1,7 +1,7 @@
 <script>
-	import Sensep from "./Sensep.svelte";
-	import Plrnlr from "./Plrnlr.svelte";
-	import Abg from "./Abg.svelte";
+	import Sensep from "./pages/Sensep.svelte";
+	import Plrnlr from "./pages/Plrnlr.svelte";
+	import Abg from "./pages/Abg.svelte";
 	import {link} from 'svelte-spa-router';
 
 </script>
